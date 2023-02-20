@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/titlelogo.png">
+    <title>Herbarium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="card-profil.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><h2>Pahling</h2></a>
+        <ul class="navmenu">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="card-type.html">Produk</a></li>
+            <li><a href="cara-buat.html">Pembuatan</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+
+        <div class="nav-icon">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+<!--
+    <section class="home">
+        <div class="home-text">
+            <h4>Interherba Key Chain</h4>
+            <h1>Potongan harga 10% di <br> setiap pembelian pertama!</h1>
+            <p>Hanya tersedia di website kami</p>
+        </div>
+
+        <div class="home-btn">
+            <a href="" class="btn1">Beli Sekarang</a>
+            <a href="" class="btn2">Stok Terbatas!</a>
+        </div>
+    </section>
+-->
+<div class="container swiper">
+    <div class="slide-container">
+        <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+                <div class="image-box">
+                    <a href="cara-buat.html">
+                    <img src="img/baner.jpg"/>
+                    </a>
+                </div>
+                <div class="profile-details">
+                    <img src="img/contribution.png">
+                    <div class="name-job">
+                        <h3 class="name"> <a href="cara-buat.html">Semanggi</a></h3>
+                        <h4 class="job">Tumbuhan Paku</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="image-box">
+                    <img src="img/baner.jpg"/>
+                </div>
+                <div class="profile-details">
+                    <img src="img/contribution.png">
+                    <div class="name-job">
+                        <h3 class="name">Semanggi</h3>
+                        <h4 class="job">Tumbuhan Paku</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<section class="footer">
+    <h2>Herbarium</h2>
+    <p>Jl. Jelawat No.51, RT.005, Timbau, Kec. Tenggarong,</p>
+    <p>Kabupaten Kutai Kartanegara, Kalimantan Timur 75571</p>
+</section>
+
+    <script src="swiper-bundle.min.js"></script>
+
+    <script src="image-slider.js"></script>
+
+    <script>
+    var swiper = new Swiper(".slide-container", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    </script>
+
+<script>
+    var swiper = new Swiper(".slide-container", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      loop: true,
+      centerSlide: "true",
+      grabCursor: "true",
+      fade: "true",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1000: {
+            slidesPerView: 2,
+        },
+      },
+    });
+  </script>
+
+
+</body>
+
+</html>
+    
+

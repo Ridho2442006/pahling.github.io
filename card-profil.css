@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kirang Haerang', cursive;
+}
+
+.container {
+    display: flex;
+    margin-top: 60px;
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.slide-container {
+    margin: 0 60px;
+    overflow: hidden;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+}
+
+.card .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card .profile-details {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 15px;
+}
+
+.card .profile-details img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.profile-details .name {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.profile-details .name a {
+    color: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+}
+
+.profile-details .name a:hover {
+    font-size: 20px;
+}
+
+.profile-details .job {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+}
+
+.swiper-navBtn {
+    color: #333;
+    height: 45px;
+    width: 45px;
+    background: #eee;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+}
+
+.swiper-navBtn:hover {
+    background: #807d7d;
+    opacity: 0.8;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 22px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .swiper-navBtn {
+        display: flex;
+    }
+}
+
+.card-hero {
+    margin: auto;
+    width: 200px;
+    height: 300px;
+    background: linear-gradient( #fdff73, #ff3838);
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px 10px rgb(0, 0, 0, 0.3);
+    transition: all ease 0.3s;
+}
+
+.card-hero img {
+    width: 200px;
+    height: 300px;
+    transition: all ease 0.3s;
+    margin-left: -3px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.card-toggle input {
+    transform: rotateY(50deg);
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    margin-left: 50%;
+    left: -200px;
+    opacity: 0;
+    top: -1px;
+    cursor: pointer;
+}
+
+.card-toggle input:checked ~ .card-hero {
+    box-shadow: 0px 0px 60px 10px rgb(253, 255, 115, 0.5),
+    0px 0px 60px 1px rgba(255, 43, 36, 0.3);
+}
+.card-toggle input:checked ~ .card-hero img {
+    transform: translateY(180px);
+}
+
+.card-text {
+    color: #333;
+    margin-bottom: -88%;
+    padding: 5px;
+    transition: all ease 0.6s;
+    cursor: pointer;
+}
+
+.card-text h1, h4 {
+    justify-content: left;
+    text-align: left;
+    margin: 3px;
+    padding: 5px;
+}
+
+.card-text p {
+    padding-left: 8px;
+    font-size: 16px;
+    color: #fff;
+    margin-top: -5px;
+}
+
+.card-text h4 {
+    font-size: 20px;
+    padding: 5px;
+    margin-top: -20px;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/titlelogo.png">
+    <title>Pahlawan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="card-profil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+    #button-prompt {
+        font-family: 'Kirang Haerang', cursive;
+        color: #fff;
+        background: #333;
+        font-size: 16px;
+        border: 2px solid #333;
+        padding: 5px;
+        border-radius: 50px;
+        height: 30px;
+        padding-top: 0px;
+        transition: all ease 0.3s;
+    }
+
+    #button-prompt:hover {
+        transform: translateY(-5px);
+        background: #fff;
+        color: #333;
+        border: 2px solid #fff;
+    }
+    </style>
+
+</head>
+<body>
+        <!-- <div class="button-toggle">
+            <div class="button-box"></div>
+            <input type="checkbox">
+            <div class="click"></div>
+            <div class="body"> -->
+    <header>
+        <button onclick="myFunction()" id="button-prompt">Klik Saya</button>
+
+        <a href="index.html" class="logo"><h2>Pahling</h2></a>
+        <ul class="navmenu">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="card-type.html">Produk</a></li>
+            <li><a href="cara-buat.html">Pembuatan</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+
+        <div class="nav-icon">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+    </header>
+
+<section class="main swiper mySwiper">
+    <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+            <img src="img/fish-in-swimming-pool.png" class="image"/>
+            <div class="image-data">
+                <span class="text">Selamat datang</span>
+                <h2>Hai <span class="auto-input"></span></h2>
+                <a href="" class="button">Tentang Kami</a>
+            </div>
+        </div>
+        <div class="slide swiper-slide">
+            <img src="img/cat-with-a-coffe.png" class="image"/>
+            <div class="image-data">
+                <span class="text">Selamat datang</span>
+                <h2>Di Website Kami</h2>
+                <a href="" class="button">Tentang Kami</a>
+            </div>
+        </div>
+        <div class="slide swiper-slide">
+            <img src="img/baner.jpg" class="image"/>
+            <div class="image-data">
+                <span class="text">Selamat datang</span>
+                <h2>Di Website Kami</h2>
+                <a href="" class="button">Tentang Kami</a>
+            </div>
+        </div>
+        <div class="slide swiper-slide">
+            <img src="img/baner.jpg" class="image"/>
+            <div class="image-data">
+                <span class="text">Selamat datang</span>
+                <h2>Di Website Kami</h2>
+                <a href="" class="button">Tentang Kami</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+
+</section>
+<br><br><br><br>
+
+<div class="card-toggle" data-aos="flip-left" data-aos-delay="0" data-aos-duration="400">
+    <input type="checkbox">
+    <div class="card-hero">
+        <div class="card-text">
+            <h1>PIKACHU</h1>
+            <h4>Kemampuan Spesial : </h4>
+            <p>Dapat menghentikan
+                pergerakan lawan
+                dalam beberapa detik.</p>
+        </div>
+        <img src="img/card.jpg">
+    </div>
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+<div class="card-toggle" data-aos="flip-left" data-aos-delay="0" data-aos-duration="400">
+<input type="checkbox">
+<div class="card-hero">
+    <div class="card-text">
+        <h1>PIKACHU</h1>
+        <h4>Kemampuan Spesial : </h4>
+        <p>Dapat menghentikan
+            pergerakan lawan
+            dalam beberapa detik.</p>
+    </div>
+    <img src="img/card.jpg">
+</div>
+</div>
+
+<section class="footer">
+    <h2>MAN 2 KUKAR</h2>
+    <p>Jl. Jelawat No.51, RT.005, Timbau, Kec. Tenggarong,</p>
+    <p>Kabupaten Kutai Kartanegara, Kalimantan Timur 75571</p>
+</section>
+    <!-- </div>
+</div> -->
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    function myFunction() {
+    var YourName = prompt("Masukkan Nama Kamu");
+    var YourProfetion = prompt("Masukkan Profesimu");
+    var typed = new Typed(".auto-input", {
+        strings : [YourName, YourProfetion],
+        typeSpeed : 100,
+        backSpeed : 100,
+        loop : true,
+    });
+    }
+</script>
+
+<script src="swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+</script>
+
+<script src="image-slider.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        once: false
+    });
+</script>
+
+</body>
+
+</html>
+    
+
