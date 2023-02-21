@@ -114,7 +114,7 @@ body {
     height: 300px;
     transition: all ease 0.3s;
     margin-left: -3px;
-    margin-top: 3px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
