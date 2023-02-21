@@ -119,14 +119,12 @@ body {
 }
 
 .card-toggle input {
-    transform: rotateY(50deg);
     position: absolute;
     width: 400px;
-    height: 300px;
+    height: 200px;
     margin-left: 50%;
     left: -200px;
-    opacity: 0;
-    top: -1px;
+    opacity: 0.9;
     cursor: pointer;
 }
 
