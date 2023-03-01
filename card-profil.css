@@ -8,19 +8,19 @@ body {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    font-family: 'Kirang Haerang', cursive;
+    font-family: 'Tilt Warp', cursive;
 }
 
 .container {
     display: flex;
     margin-top: 60px;
-    max-width: 1120px;
+    max-width: 600px;
     width: 100%;
     padding: 40px 0;
 }
 
 .slide-container {
-    margin: 0 60px;
+    margin: 0 40px;
     overflow: hidden;
 }
 
@@ -69,17 +69,17 @@ body {
 }
 
 .swiper-navBtn {
-    color: #333;
-    height: 45px;
-    width: 45px;
-    background: #eee;
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    background: #AA5656;
     border-radius: 50%;
     transition: all 0.3s ease;
     opacity: 0.5;
 }
 
 .swiper-navBtn:hover {
-    background: #807d7d;
+    background: #AA5656;
     opacity: 0.8;
 }
 
@@ -89,7 +89,7 @@ body {
 }
 
 .swiper-pagination-bullet {
-    background-color: #333;
+    background-color: #AA5656;
 }
 
 @media (max-width: 768px) {
